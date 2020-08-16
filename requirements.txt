@@ -1,0 +1,8 @@
+area
+fastkml
+imageio
+matplotlib
+numpy<=1.16.2
+scikit-image
+scipy<=1.2.1
+sentinelhub<=2.6.1
