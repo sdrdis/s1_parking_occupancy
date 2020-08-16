@@ -1,6 +1,6 @@
 # PARKING OCCUPANCY ESTIMATION ON SENTINEL-1 IMAGES
 
-Implementation for ISPRS 2020 paper [PARKING OCCUPANCY ESTIMATION ON SENTINEL-1 IMAGES](https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/V-2-2020/821/2020/).
+Implementation for our ISPRS 2020 paper [PARKING OCCUPANCY ESTIMATION ON SENTINEL-1 IMAGES](https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/V-2-2020/821/2020/).
 
 Authors:
 * Sébastien Drouyer ([Website](http://sebastien.drouyer.com/), [Github](https://github.com/sdrdis), [Twitter](https://twitter.com/sdrdis))
@@ -17,7 +17,7 @@ python utils_generate_positions_from_kmls.py kmls_folder id
 
 Where `kmls_folder` is a folder containing kmls and `id` is an identifier (for example "retail_parkings")
 
-Generates a file containing positions in the `positions` folder.
+Generates a NPZ file containing coordinates of all parkings to monitor in the `positions` folder.
 
 ## Step 2: generate dataset
 

@@ -102,6 +102,6 @@ for i in range(len(shapes)):#range(len(shapes)):
                                  instance_id=INSTANCE_ID)
         
         s1_data = s1_request.get_data()
-        tifffile.imsave(filepath, np.dstack((s1_data[-1], np.zeros((s1_data[-1].shape[0],s1_data[-1].shape[1])))) * 10000, compress=7)
+        tifffile.imsave(filepath, np.dstack((s1_data[-1], np.zeros((s1_data[-1].shape[0],s1_data[-1].shape[1])))), compress=7)
         
     #sys.exit()

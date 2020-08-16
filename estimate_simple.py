@@ -12,7 +12,7 @@ import common
 parser = argparse.ArgumentParser(description='')
 parser.add_argument('--subfolder', type=str, default='*', help='Subfolder')
 parser.add_argument('--debug_path', type=str, default='', help='Debug folder path')
-parser.add_argument('--threshold', type=float, default=160, help='Threshold')
+parser.add_argument('--threshold', type=float, default=0.0160, help='Threshold')
 args = parser.parse_args()
 
 root_data_path = 'data'
