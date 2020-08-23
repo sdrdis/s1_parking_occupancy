@@ -23,7 +23,7 @@ positions_path = 'positions'
 
 parser = argparse.ArgumentParser(description='')
 parser.add_argument('positions_id', type=str, help='Positions filename')
-parser.add_argument('--instance_id', type=str, default='', help='Sentinel-hub instance id')
+parser.add_argument('instance_id', type=str, default='', help='Sentinel-hub instance id')
 parser.add_argument('--from_datetime', type=str, default='2019-01-01T00:00:00', help='From date')
 parser.add_argument('--to_datetime', type=str, default='2020-03-31T23:59:59', help='To date')
 parser.add_argument('--resolution', type=str, default='5m', help='Resolution')

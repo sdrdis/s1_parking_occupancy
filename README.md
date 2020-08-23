@@ -38,13 +38,17 @@ data['dirnames'] # contains filenames of kmls
 
 ## Step 2: generate dataset
 
+Prior to this step, we assume that you have created a sentinel-hub instance and that you have added the `BOTH` layer configured as shown below.
+
+![Image of Sentinel-Hub configuration](readme_sentinel_hub.png)
+
 Generate dataset (example below from sentinel-hub website)
 
 ```
-python generate_dataset_sentinelhub.py id
+python generate_dataset_sentinelhub.py id sentinel_hub_instance_id
 ```
 
-Where `id` is an identifier (for example "retail_parkings").
+Where `id` is an identifier (for example "retail_parkings"), and `sentinel_hub_instance_id` is the Sentinel-hub instance id.
 
 Generates folders in `data/{id}` containing images.
 
