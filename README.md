@@ -52,6 +52,22 @@ Where `id` is an identifier (for example "retail_parkings"), and `sentinel_hub_i
 
 Generates folders in `data/{id}` containing images.
 
+Example:
+
+```
+python generate_dataset_sentinelhub.py test_parkings {{YOUR_SENTINEL_HUB_ID}}
+```
+
+Will generate in the folder `data/test_parkings` all images data. The inside structure is the following:
+* parking_1
+  * images # contains all images of parking 1
+    * 20190101_060728_S1A_DESCENDING_008.tif
+    * ...
+  * metadata.npz # contains several informations about the parking (bounding box, shape of parking)
+* parking_2
+  * ...
+
+
 ## Step 3: evaluate masks
 
 ### First way: simple mask
