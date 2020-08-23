@@ -19,6 +19,23 @@ Where `kmls_folder` is a folder containing kmls and `id` is an identifier (for e
 
 Generates a NPZ file containing coordinates of all parkings to monitor in the `positions` folder.
 
+For example, you can run the following command:
+
+```
+python utils_generate_positions_from_kmls.py sample_kml_folders test_parkings.npz
+```
+
+That will generate the `positions/test_parkings.npz` file.
+
+This file can be opened with python:
+
+```
+import numpy as np
+data = np.load('positions/test_parkings.npz')
+data['shapes'] # contains all parkings coordinates
+data['dirnames'] # contains filenames of kmls
+``` 
+
 ## Step 2: generate dataset
 
 Generate dataset (example below from sentinel-hub website)
